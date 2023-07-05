@@ -1,4 +1,4 @@
-const { Op } = require ('sequelize');
+const { Op } = require('sequelize');
 const { BlogPost, PostCategory, User, Category } = require('../models');
 
 const postNewPost = async ({ title, content, userId, categoryIds }) => {

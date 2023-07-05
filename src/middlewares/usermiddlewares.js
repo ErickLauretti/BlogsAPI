@@ -15,7 +15,7 @@ const loginAndPasswordValidate = (req, res, next) => {
   next();
 };
 
-const userValidate = async (req, res , next) => {
+const userValidate = async (req, res, next) => {
   const { email, password } = req.body;
   const user = await User.findOne({ where: { email, password } });
   if (!user) {
